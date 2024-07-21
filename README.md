@@ -1,5 +1,5 @@
  
-<h2 align="center" ><style="color:brown"> TOPIC : Water Quality Prediction</font></h2>
+<h2 align="center" ><style="color:red"> TOPIC : Water Quality Prediction</font></h2>
 <h4 align="center"> (Drinking water potability)</h4>
 
 <H3 align="right" ><style="color:brown">Author Name : SUSMY P B</font></H3>
