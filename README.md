@@ -453,14 +453,129 @@ It makes use of weighted errors to build a strong classifier from a series of we
 <p><b><U>Train the models with selected features using SelectKBest </U></b></p>
 
 
-<table></table>
+<table>
+  <tr>
+    <th>Model-Name</th>
+    <th>Precision</th>
+    <th>Recall</th>
+    <th>F1 score</th>
+    <th>Accuracy</th>
+  </tr>
+  <tr>
 
+    <td>SVC</td>
+    <td>0.493274 </td>
+    <td>0.450820</td>
+    <td>0.471092	</td>
+    <td>0.623476</td>
+  </tr>
+  <tr> 
+    <td>AdaBoostClassifier</td>
+    <td>0.424342	 </td>
+    <td>0.528689	</td>
+    <td>0.470803</td>
+    <td>0.557927</td>
+  </tr>
+    <tr> 
+    <td>XGBClassifier</td>
+    <td>0.440945	 </td>
+    <td>0.459016	</td>
+    <td>0.449799</td>
+    <td>0.582317</td>
+  </tr>
+    <tr> 
+    <td>DecisionTreeClassifier</td>
+    <td>0.419355	 </td>
+    <td>0.479508	</td>
+    <td>0.447419</td>
+    <td>0.559451</td>
+  </tr>
+    <tr> 
+    <td>RandomForestClassifier</td>
+    <td>0.472222	 </td>
+    <td>0.418033	</td>
+    <td>0.443478</td>
+    <td>0.609756</td>
+  </tr>
+     <tr> 
+    <td>LogisticRegression</td>
+    <td>0.386581		 </td>
+    <td>0.495902		</td>
+    <td>0.434470</td>
+    <td>0.519817</td>
+  </tr>
+     <tr> 
+    <td>KNeighborsClassifier</td>
+    <td>0.397163		 </td>
+    <td>0.459016	</td>
+    <td>0.425856</td>
+    <td>0.539634</td>
+  </tr>
+</table>
 
 <p><b><U>Train the models with selected features using Random Forest Regressor</U></b></p>
 
 
-<table></table>
+<table>
+  <tr>
+    <th>Model-Name</th>
+    <th>Precision</th>
+    <th>Recall</th>
+    <th>F1 score</th>
+    <th>Accuracy</th>
+  </tr>
+  <tr>
 
+    <td>SVC</td>
+    <td>0.493274 </td>
+    <td>0.450820</td>
+    <td>0.471092	</td>
+    <td>0.623476</td>
+  </tr>
+   <tr> 
+    <td>RandomForestClassifier</td>
+    <td>0.472222	 </td>
+    <td>0.418033	</td>
+    <td>0.443478</td>
+    <td>0.609756</td>
+  </tr>
+   <tr> 
+    <td>KNeighborsClassifier</td>
+    <td>0.397163		 </td>
+    <td>0.459016	</td>
+    <td>0.425856</td>
+    <td>0.539634</td>
+  </tr>
+   <tr> 
+    <td>XGBClassifier</td>
+    <td>0.440945	 </td>
+    <td>0.459016	</td>
+    <td>0.449799</td>
+    <td>0.582317</td>
+  </tr>
+   <tr> 
+    <td>DecisionTreeClassifier</td>
+    <td>0.419355	 </td>
+    <td>0.479508	</td>
+    <td>0.447419</td>
+    <td>0.559451</td>
+  </tr>
+  <tr> 
+    <td>AdaBoostClassifier</td>
+    <td>0.424342	 </td>
+    <td>0.528689	</td>
+    <td>0.470803</td>
+    <td>0.557927</td>
+  </tr> 
+     <tr> 
+    <td>LogisticRegression</td>
+    <td>0.386581		 </td>
+    <td>0.495902		</td>
+    <td>0.434470</td>
+    <td>0.519817</td>
+  </tr>
+    
+</table>
 
 ### 14. HYPER PARAMETER TUNNING
 
