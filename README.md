@@ -93,14 +93,48 @@ Indicates if water is safe for human consumption where 1 means Potable and 0 mea
 ## Identify numerical and categorical columns
 <p>For numerical columns,</p>
 
-# Numerical columns
 <i>num_cols = df.select_dtypes(include='number').columns</i>
 <i>print(num_cols)</i>
 
+<P>->This pandas DataFrame method, <B>select_dtypes()</B>, is used to select columns based on their data types.</P>
+<P>->The argument <B>include='number'</B> specifies that you want to select columns with numeric data types (float64 and int64).</P>
+<P>->This method returns a DataFrame containing only the columns that match the specified data types.</P>
 
+<p>For categorical columns,</p>
 
+<i>cat_cols = df.select_dtypes(include='object').columns</i>
+<i>print(cat_cols )</i>
 
+<P>-> <B>select_dtypes()</B> is a pandas DataFrame method used to select columns based on their data types.</P>
+<P>-> The argument <B>include='object'</B> specifies that you want to select columns with object data types. In pandas, object data type corresponds to string or categorical data.</P>
+<P>-> This method returns a DataFrame containing only the columns that match the specified data types.</P>
 
+<p>After the findings, Out of 10 columns, 0 are categorical and 10 are numerical,There is <b>no categorical columns</b> in it.</p>
+
+## Checking for null values
+
+<p> isnull() is a pandas DataFrame method that returns a boolean DataFrame of the same shape as df, where each element is True if the corresponding element in df is NaN, and False otherwise.</p>
+<p> After applying df.isnull(), .sum() is used to sum up the True values for each column, because in Python, True is interpreted as 1 and False as 0 when summing.</p>
+
+<p><b></b>In our data,we can find ph,Sulfate,Trihalomethanes of isnull().sum() is greather than zero.</b></p>
+
+<p><b>Note</b> : If percentage of missing values is greater than 50%, we can drop that columns.</p>
+
+<p>we handle the null values using <b>fillna()</b> method. df.fillna(...) is a pandas DataFrame method used to fill NaN (missing) values in the DataFrame.
+</p>
+
+## Checking for Duplicates
+
+<p><B>There are no duplicate values in our data set.</B></p>
+
+## Understand the distribution of data
+
+<h3>Descriptive statistics</h3> 
+<i>df.describe().T</i> 
+<p> describe() is a pandas DataFrame method that generates descriptive statistics of numerical (numeric) columns in the DataFrame.</p>
+<p>Here we plot histograms for the graphical representations of the distribution of numerical data.</p>
+
+<h5><b>Histograms</b> are graphical representations of the distribution of numerical data. They are useful for understanding the shape, spread, and central tendency of a dataset.Histograms are versatile tools for exploring and visualizing the distribution of numerical data. They provide a quick visual summary that helps in understanding the nature of data, identifying outliers, and making initial assessments about its statistical properties.</h5>
 
 
 
