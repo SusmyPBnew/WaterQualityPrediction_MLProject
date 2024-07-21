@@ -132,9 +132,44 @@ Indicates if water is safe for human consumption where 1 means Potable and 0 mea
 <h3>Descriptive statistics</h3> 
 <i>df.describe().T</i> 
 <p> describe() is a pandas DataFrame method that generates descriptive statistics of numerical (numeric) columns in the DataFrame.</p>
-<p>Here we plot histograms for the graphical representations of the distribution of numerical data.</p>
 
+<p>Here we plot <b>histograms</b> for the graphical representations of the distribution of numerical data.</p>
 <h5><b>Histograms</b> are graphical representations of the distribution of numerical data. They are useful for understanding the shape, spread, and central tendency of a dataset.Histograms are versatile tools for exploring and visualizing the distribution of numerical data. They provide a quick visual summary that helps in understanding the nature of data, identifying outliers, and making initial assessments about its statistical properties.</h5>
+<p>After draw the histogram, we can see Skewness in the feature Solids.It has <b>right skewness</b>.And Conductivity has slightly skewness in it.</p>
+<p><b>Skewness</b> refers to the measure of asymmetry in the distribution of data points. There are three types of skewness:</p>
+<p>1.Positive Skewness (Right Skewness)</p>
+<p>2.Negative Skewness (Left Skewness)</p>
+<p>3.Zero Skewness (Symmetric Distribution)</p>
+
+<p>Then we plot <b> Histogram of a specific column (e.g., pH)</b>.sns.histplot(): This function from Seaborn is used to create a histogram (or KDE plot) of the 'ph' column in your DataFrame df.
+</p>
+<P>pH is the measure of hydrogen ions in water-based liquids. The pH scale shows the leaves of acidity and alkalinity of water and similar liquids.</P>
+<P>In its purest form, water has a pH of 7, which is at the exact center of the pH scale. Particles in the water can change the pH of the water, and most water for use has a pH of somewhere between 6.5 and 8.5.</P>
+
+<p>Then we plot <b> boxplot</b>, for the current numerical column (col) from the DataFrame df.</p>
+<h4><b>Outliers</b>: By default, Matplotlib's boxplot() function will mark outliers as individual points beyond the whiskers of each box plot. These points are typically identified based on the interquartile range (IQR) method (1.5 times the IQR from Q1 and Q3).</h4>
+<p>There is outlier in solids data.A question that,should we remove it or not?</p>
+<p>Ans : It's upto you.That is a experimental thing.</p>
+<p>If you don't remove it,the excess solids leads bad quality in water.If you remove,then we get the good water only.If we remove all bad elements your Data Science model will not good.</p>
+<b>If we not removing the outliers, they may be important to decide the quality of water.But we removing the outliers.</b>
+
+<p>Then we plot scatter plot to identify the relationship between dependent (Portability) and independent features. sns.scatterplot() is used here to create scatter plots, which are useful for visualizing the relationship between two numerical variables (col and 'Potability' in this case).</p>
+
+## Checking if we need to dimensionality reduction
+
+<p><b><i>Dimensionality reduction</i></b> refers to the process of reducing the number of random variables under consideration, either by selecting a subset of variables or by transforming them into a smaller set of variables. This is particularly useful in machine learning and data analysis for several reasons:</p>
+<ol>
+<li><b>Curse of Dimensionality</b>: High-dimensional data often suffers from the curse of dimensionality, where the algorithms become less efficient and more prone to overfitting.</li>
+
+<li><b>Computational Efficiency</b>: Reducing the number of features can lead to faster training and testing of machine learning models.</li>
+
+<li><b>Visualization</b>: It is difficult to visualize data in more than three dimensions. Dimensionality reduction helps in visualizing the data in a lower-dimensional space.</li></ol>
+
+
+
+
+
+
 
 
 
