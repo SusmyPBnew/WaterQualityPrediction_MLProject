@@ -179,6 +179,7 @@ Indicates if water is safe for human consumption where 1 means Potable and 0 mea
 <li>Adjust the threshold values (<b>1</b> and <b>-1</b> for skewness, <b>3</b> for kurtosis) according to your specific analysis requirements.</li>
 <li>The <b>lambda x: kurtosis(x, fisher=False)</b> syntax is used to calculate kurtosis with the <b>fisher=False</b> parameter to ensure the result matches the definition where kurtosis of a normal distribution is 3.
 </li></ul>
+
 ## 6. DATA PREPROCESSING
 ## Remove unnecessary columns
  <H5><B>Columns with multicolinearity</B> :When we create correlation matrix,there is no relation between any columns.There is no columns with multicolinearity</H5>
@@ -220,12 +221,12 @@ for imputing missing values by using the k-nearest neighbors approach.<H5>
 
 ## 7. VISUALIZATION
 <p>1.<b>Histograms</b> for numerical columns after outlier treatment</p>
-<p>2.Pair plot - To visualize relationships between multiple pairs of variables.<b>pairplot()</b> function, is a grid of plots that displays pairwise relationships among a set of variables. Each variable in the dataset is paired with every other variable, resulting in a matrix of scatterplots where variables along the diagonal are plotted against themselves (showing distributions), and variables off the diagonal are plotted against each other (showing relationships).</p>
+<p>2.<b>Pair plot</b> - To visualize relationships between multiple pairs of variables.<b>pairplot()</b> function, is a grid of plots that displays pairwise relationships among a set of variables. Each variable in the dataset is paired with every other variable, resulting in a matrix of scatterplots where variables along the diagonal are plotted against themselves (showing distributions), and variables off the diagonal are plotted against each other (showing relationships).</p>
 
 <i>df['Potability'].value_counts()</i>
 <p>Above displays the count of the class variable which is namely potability.The dataset contains <b>1998</b> number of 0s which implies <i>contaminated water</i> and <b>1278</b> number of 1s which implies <i>potable water</i></p>
 
-<p>3.Count plot :<i>sns.countplot(data=df, x=df['Potability'], color='skyblue', edgecolor='black') </i> It simplifies the process of creating count plots by directly accepting the DataFrame and column name.</p>
+<p>3.<b>Count plot </b>:<i>sns.countplot(data=df, x=df['Potability'], color='skyblue', edgecolor='black') </i> It simplifies the process of creating count plots by directly accepting the DataFrame and column name.</p>
 
 <p>4.<b>Bar plot</b> :A bar plot is a common type of visualization used to display categorical data. It represents categorical data with rectangular bars, where the length of each bar is proportional to the count or frequency of a category in the data. </p>
 
@@ -253,7 +254,6 @@ for imputing missing values by using the k-nearest neighbors approach.<H5>
 ## 8. FEATURE ENGINEERING
 <H4>Encode categorical features to numerical using techniques like one-hot encoding or label encoding to prepare the
 data for machine learning algorithms. Use Label encoding for ordinal data and one-hot encoding for nominal data.</H4>
-<br>
 <H4>In our dataset there is no categorical value.So we don't want to using techniques like one-hot encoding or label encoding</H4>
 
 ### 8.1 Feature Extraction
@@ -370,6 +370,7 @@ It makes use of weighted errors to build a strong classifier from a series of we
 <H4><B>KNN</B> is a simple, supervised machine learning (ML) algorithm that can be used for classification or regression tasks - and is also frequently used in missing value imputation. It is based on the idea that the observations closest to a given data point are the most "similar" observations in a data set, and we can therefore classify unforeseen points based on the values of the closest existing points. By choosing K, the user can select the number of nearby observations to use in the algorithm.</H4>
 
 ## 13. MODEL EVALUATION
+
 <table>
     <tr>
     <td></td>
@@ -494,8 +495,8 @@ It makes use of weighted errors to build a strong classifier from a series of we
 
 <li> <b>Ethical and Social Considerations:</b> Addressing ethical considerations such as data privacy, bias in algorithms, and equity in access to water quality information is crucial. Future research should prioritize developing fair and inclusive approaches to water quality prediction using ML.</li>
 </ol>
-
-<p><b>Finally</b>,I am trying to save the the csv after into a new csv(visualization.csv) for <b>Data Visualization</b>.</p>
+<br/>
+<p><b>Note : </b>Finally,I am trying to save the the csv after into a new csv(visualization.csv) for <b>Data Visualization</b>.</p>
 
 <h2 align="center" ><font color='blue'>Thank You</font></h2>
 
