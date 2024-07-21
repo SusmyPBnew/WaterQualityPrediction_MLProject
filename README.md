@@ -373,12 +373,12 @@ It makes use of weighted errors to build a strong classifier from a series of we
 
 <table>
     <tr>
-    <td></td>
-    <td>Model</td>
-    <td>Accuracy Score</td>
-    <td>Precision</td>
-    <td>Recall</td>
-    <td>F1 score</td></tr>
+    <th></th>
+    <th>Model</th>
+    <th>Accuracy Score</th>
+    <th>Precision</th>
+    <th>Recall</th>
+    <th>F1 score</th></tr>
 
      <tr>
     <td></td>
