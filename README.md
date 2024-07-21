@@ -621,7 +621,7 @@ It makes use of weighted errors to build a strong classifier from a series of we
 <p>Use appropriate metrics to evaluate the model's performance on the unseen data. For classification tasks, metrics like accuracy, precision, recall, and F1-score are commonly used. Adjust the evaluation metrics based on your specific problem and goals.</p>
 
 <p>Then we get a confusion matrix,</p>
-<table border="0">
+<table border : none>
   <tr>
     <th></th>
     <th>Precision</th>
@@ -665,6 +665,7 @@ It makes use of weighted errors to build a strong classifier from a series of we
     <td>3</td>
   </tr>
 </table>
+
 ## 17. LIMITATIONS
 <p>In our project certain limitations include,</p>
 <p>1.In case of dimensionality reduction,we couldn't find any columns with correlation.So, there is <b>no Multicollinearity</b> here.So we need to retain all features.</p>
