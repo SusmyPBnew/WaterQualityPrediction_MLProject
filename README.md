@@ -373,19 +373,20 @@ It makes use of weighted errors to build a strong classifier from a series of we
 
 <table>
   <tr>
-    <th>Company</th>
-    <th>Contact</th>
-    <th>Country</th>
+    <th></th>
+    <th>Model</th>
+    <th>Accuracy Score</th>
+    <th>Precision</th>
+    <th>Recall</th>
+    <th>F1 score</th>
   </tr>
   <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
-  </tr>
-  <tr>
-    <td>Centro comercial Moctezuma</td>
-    <td>Francisco Chang</td>
-    <td>Mexico</td>
+    <td>0</td>
+    <td>Logistic Regression</td>
+    <td>0.493902 </td>
+    <td>0.362500</td>
+    <td>0.475410</td>
+    <td>0.411348</td>
   </tr>
 </table>
 
