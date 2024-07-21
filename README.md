@@ -388,6 +388,54 @@ It makes use of weighted errors to build a strong classifier from a series of we
     <td>0.475410</td>
     <td>0.411348</td>
   </tr>
+  <tr>
+    <td>1</td>
+    <td>Decision Tree</td>
+    <td>0.570122	 </td>
+    <td>0.435811	</td>
+    <td>0.528689</td>
+    <td>0.477778</td>
+  </tr>
+    <tr>
+    <td>2</td>
+    <td>Random Forest</td>
+    <td>0.649390	 </td>
+    <td>0.531818	</td>
+    <td>0.479508</td>
+    <td>0.504310</td>
+  </tr>
+    <tr>
+    <td>3</td>
+    <td>SVM</td>
+    <td>0.644817	 </td>
+    <td>0.520147	</td>
+    <td>0.581967</td>
+    <td>0.549323</td>
+  </tr>
+    <tr>
+    <td>4</td>
+    <td>XGBoost</td>
+    <td>0.626524	 </td>
+    <td>0.497942	</td>
+    <td>0.495902</td>
+    <td>0.496920</td>
+  </tr>
+     <tr>
+    <td>5</td>
+    <td>AdaBoost</td>
+    <td>0.570122		 </td>
+    <td>0.425781	</td>
+    <td>0.446721</td>
+    <td>0.436000</td>
+  </tr>
+     <tr>
+    <td>6</td>
+    <td>KNN</td>
+    <td>0.620427		 </td>
+    <td>0.491803	</td>
+    <td>0.614754</td>
+    <td>0.546448</td>
+  </tr>
 </table>
 
 
