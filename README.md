@@ -462,7 +462,6 @@ It makes use of weighted errors to build a strong classifier from a series of we
     <th>Accuracy</th>
   </tr>
   <tr>
-
     <td>SVC</td>
     <td>0.493274 </td>
     <td>0.450820</td>
@@ -524,55 +523,54 @@ It makes use of weighted errors to build a strong classifier from a series of we
     <th>F1 score</th>
     <th>Accuracy</th>
   </tr>
-  <tr>
-
+  <tr> 
     <td>SVC</td>
-    <td>0.493274 </td>
-    <td>0.450820</td>
-    <td>0.471092	</td>
-    <td>0.623476</td>
+    <td>0.567100 </td>
+    <td>0.536885</td>
+    <td>0.551579	</td>
+    <td>0.675305</td>
   </tr>
    <tr> 
     <td>RandomForestClassifier</td>
-    <td>0.472222	 </td>
-    <td>0.418033	</td>
-    <td>0.443478</td>
-    <td>0.609756</td>
+    <td>0.541322	 </td>
+    <td>0.536885	</td>
+    <td>0.539095</td>
+    <td>0.658537</td>
   </tr>
    <tr> 
     <td>KNeighborsClassifier</td>
-    <td>0.397163		 </td>
-    <td>0.459016	</td>
-    <td>0.425856</td>
-    <td>0.539634</td>
+    <td>0.501767		 </td>
+    <td>0.581967	</td>
+    <td>0.538899</td>
+    <td>0.629573</td>
   </tr>
    <tr> 
     <td>XGBClassifier</td>
-    <td>0.440945	 </td>
-    <td>0.459016	</td>
-    <td>0.449799</td>
-    <td>0.582317</td>
+    <td>0.510040	 </td>
+    <td>0.520492	</td>
+    <td>0.515213</td>
+    <td>0.635671</td>
   </tr>
    <tr> 
     <td>DecisionTreeClassifier</td>
-    <td>0.419355	 </td>
-    <td>0.479508	</td>
-    <td>0.447419</td>
-    <td>0.559451</td>
+    <td>0.456081	 </td>
+    <td>0.553279	</td>
+    <td>0.500000</td>
+    <td>0.588415</td>
   </tr>
   <tr> 
     <td>AdaBoostClassifier</td>
-    <td>0.424342	 </td>
-    <td>0.528689	</td>
-    <td>0.470803</td>
-    <td>0.557927</td>
+    <td>0.438819	 </td>
+    <td>0.426230	</td>
+    <td>0.432432</td>
+    <td>0.583841</td>
   </tr> 
      <tr> 
     <td>LogisticRegression</td>
-    <td>0.386581		 </td>
-    <td>0.495902		</td>
-    <td>0.434470</td>
-    <td>0.519817</td>
+    <td>0.350000		 </td>
+    <td>0.430328		</td>
+    <td>0.386029</td>
+    <td>0.490854</td>
   </tr>
     
 </table>
@@ -623,8 +621,50 @@ It makes use of weighted errors to build a strong classifier from a series of we
 <p>Use appropriate metrics to evaluate the model's performance on the unseen data. For classification tasks, metrics like accuracy, precision, recall, and F1-score are commonly used. Adjust the evaluation metrics based on your specific problem and goals.</p>
 
 <p>Then we get a confusion matrix,</p>
-<table></table>
-
+<table border="0">
+  <tr>
+    <th></th>
+    <th>Precision</th>
+    <th>Recall</th>
+    <th>F1 score</th>
+    <th>Support</th>
+  </tr>
+  <tr> 
+    <td>0</td>
+    <td>0.33 </td>
+    <td>1.00</td>
+    <td>0.50	</td>
+    <td>1</td>
+  </tr>
+   <tr> 
+    <td>1</td>
+    <td>0.00	 </td>
+    <td>0.00	</td>
+    <td>0.00</td>
+    <td>2</td>
+  </tr>
+   <tr> 
+    <td>accuracy</td>
+    <td> 		 </td>
+    <td> 	</td>
+    <td>0.33</td>
+    <td>3</td>
+  </tr>
+   <tr> 
+    <td>macro avg</td>
+    <td>0.17	 </td>
+    <td>0.50	</td>
+    <td>0.25</td>
+    <td>3</td>
+  </tr>
+   <tr> 
+    <td>weighted avg</td>
+    <td>0.11	 </td>
+    <td>0.33	</td>
+    <td>0.17</td>
+    <td>3</td>
+  </tr>
+</table>
 ## 17. LIMITATIONS
 <p>In our project certain limitations include,</p>
 <p>1.In case of dimensionality reduction,we couldn't find any columns with correlation.So, there is <b>no Multicollinearity</b> here.So we need to retain all features.</p>
